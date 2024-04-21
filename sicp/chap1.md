@@ -146,3 +146,22 @@ returns the sum of the squares of the two larger numbers.
         (else (+ (* a a)
                  (* b b)))))
 ```
+
+# Exercise 1.4
+
+Description of the behavior of the following procedure with the
+observation that our model of evaluation allows for combinations whose
+operators are compound expressions.
+
+```scheme
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -) a b))
+```
+
+The sub-expression `(if (> b 0) + -)` will evaluate to `+` if $b > 0$ and `-` otherwise.
+So, the body of the procedure will become
+
+- `(+ a b)` if $b > 0$
+- `(- a b)` if $b \le 0$
+
+In sum, the procedure `a-plus-abs-b` is computing $a + |b|$.
