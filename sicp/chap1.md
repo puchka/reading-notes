@@ -129,3 +129,20 @@ $$
       (- 6 2)
       (- 2 7)))
 ```
+
+# Exercise 1.3
+
+Definition of a procedure that takes three numbers as arguments and
+returns the sum of the squares of the two larger numbers.
+
+```scheme
+(define (sum-squares-two-larger-numbers a b c)
+  (cond ((and (< b a)
+              (< b c)) (+ (* a a)
+                          (* c c)))
+        ((and (< a b)
+              (< a c)) (+ (* b b)
+                          (* c c)))
+        (else (+ (* a a)
+                 (* b b)))))
+```
