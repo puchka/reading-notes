@@ -165,3 +165,41 @@ So, the body of the procedure will become
 - `(- a b)` if $b \le 0$
 
 In sum, the procedure `a-plus-abs-b` is computing $a + |b|$.
+
+# Exercise 1.5
+
+Ben Bitdiddle has invented a test to determine whether the interpreter
+he is faced with is using applicative-order evaluation or normal-order
+evaluation. He defines the following two procedures:
+
+```scheme
+(define (p) (p))
+
+(define (test x y)
+  (if (= x 0)
+    0
+    y))
+```
+
+Then he evaluates the expression `(test 0 (p))`.
+
+Let's devise the behavior that Ben will observe with an interpreter that uses
+
+- Applicative-order evaluation
+
+The interpreter will evaluate the arguments at first and `(p)` will
+call itself and will be an infinite loop that never ends.
+
+- Normal-order evaluation
+
+The interpreter will first expand the expression `(test 0 (p))` into
+
+```scheme
+(if (= 0 0)
+  0
+  (p))
+```
+
+As `(= 0 0)` evaluates to `true`, the consequent `0` will be
+evaluated and the procedure evaluation will terminate with the result
+`0`.
