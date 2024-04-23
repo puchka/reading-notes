@@ -203,3 +203,51 @@ The interpreter will first expand the expression `(test 0 (p))` into
 As `(= 0 0)` evaluates to `true`, the consequent `0` will be
 evaluated and the procedure evaluation will terminate with the result
 `0`.
+
+# Exercise 1.6
+
+Alyssa P. Hacker doesn't see why `if` needs to be provided as a
+special form.  "Why can't I just define it as an ordinary procedure in
+terms of cond?" she asks.  Alyssa's friend Eva Lu Ator claims this can
+indeed done, and she defines a new version of `if`:
+
+```scheme
+(define (new-if predicate then-clause else-clause)
+  (cond (predicate then-clause)
+        (else else-clause)))
+```
+
+Eva demonstrates the program for Alyssa:
+
+```scheme
+(new-if (= 2 3) 0 5)
+```
+
+```
+5
+```
+
+```scheme
+(new-if (= 1 1) 0 5)
+```
+
+```
+0
+```
+
+Delighted, Alyssa uses `new-if` to rewrite the square-root program:
+
+```scheme
+(define (sqrt-iter guess x)
+  (new-if (good-enough? guess x)
+          guess
+          (sqrt-iter (improve guess x)
+                     x)))
+```
+
+When Alyssa attempts to use `new-if` to compute square roots, it will
+end into a never ending evaluation. In fact, according to the
+substitution model for procedure evaluation, the operands of `new-if`
+will be evaluated before applying the operation on them.  It will then
+evaluate `sqrt-iter` call even if the guess is already good
+enough. The later would call another iteration, and so on...
