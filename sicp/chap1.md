@@ -251,3 +251,53 @@ substitution model for procedure evaluation, the operands of `new-if`
 will be evaluated before applying the operation on them.  It will then
 evaluate `sqrt-iter` call even if the guess is already good
 enough. The later would call another iteration, and so on...
+
+# Exercise 1.7
+
+The `good-enough?` test used in computing square roots will not be
+very effective for finding square roots of very small numbers because
+the margin of error could be higher than the number itself.
+
+e.g.
+
+```scheme
+(square (sqrt 0.0000001))
+
+;Value: 9.76629102245155e-4
+```
+
+For very large numbers, the procedure evaluation can take very long.
+
+e.g.
+
+```scheme
+(sqrt 1e100)
+```
+
+The evaluation of this expression causes the interpreter to become
+stuck.
+
+An alternative strategy for implementing `good-enough?` is to watch
+how `guess` changes from one iteration to the next and to stop when
+the change is very small fraction of the guess.
+
+```scheme
+(define (good-enough? guess x)
+  (< (abs (- guess (improve guess x))) (* 0.0001 guess)))
+```
+
+Using this new definition of `good-enough?` the previous expressions
+are respectively more accurate and terminable within a reasonable
+time.
+
+```scheme
+ (square (sqrt 0.0000001))
+
+;Value: 1.0001264334838593e-7
+```
+
+```scheme
+(sqrt 1e100)
+
+;Value: 1.000000633105179e50
+```
