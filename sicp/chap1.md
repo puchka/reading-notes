@@ -400,7 +400,7 @@ The following procedure computes a mathematical function called Ackermann's func
         ((= x 0) (* 2 y))
         ((= y 1) 2)
         (else (A (- x 1)
-                 (A x (- y 1)))))))
+                 (A x (- y 1))))))
 ```
 
 Let's compute the value of the following expressions.
@@ -699,3 +699,87 @@ computes $2^n$
 
 computes $2_n$
  
+# Example from section 1.2.2 Tree recursion: Counting change
+
+Let's walk through the detail of how the reduction rule applies to the
+problem of making change for 10 cents using pennies and nickels.
+
+Let's note a = 10 four the amount in pennies and c = {1, 5} for the
+set of all kinds of coins.
+
+(1)  - using all but first kind of coin a = 10 c = {5}     (2)
+     - using all n kind of coins        a = 9  c = {1, 5}  (3)
+    
+(2)  - using all but first kind of coin a = 10 c = {}      => 0
+     - using all kinds of coin          a = 5  c = {5}     (4)
+    
+(3)  - using all but first kind of coin a = 9  c = {5}     (5)
+     - using all kind of coin           a = 8  c = {1, 5}  (6)
+    
+(4)  - using all but first kind of coin a = 5  c = {}      => 0
+     - using all kind of coin           a = 0  c = {5}     => 1
+    
+(5)  - using all but first kind of coin a = 9  c = {}      => 0
+     - using all kind of coin           a = 4  c = {5}     (7)
+    
+(6)  - using all but first kind of coin a = 8  c = {5}     (8)
+     - using all kind of coin           a = 7  c = {1, 5}  (9)
+    
+(7)  - using all but first kind of coin a = 4  c = {}      => 0
+     - using all kind of coin           a = -1 c = {5}     => 0
+    
+(8)  - using all but first kind of coin a = 8  c = {}      => 0
+     - using all kind of coin           a = 3  c = {5}     (10)
+    
+(9)  - using all but first kind of coin a = 7  c = {5}     (11)
+     - using all kind of coin           a = 6  c = {1, 5}  (12)
+    
+(10) - using all but first kind of coin a = 3  c = {}      => 0
+     - using all kind of coin           a = -2 c = {5}     => 0
+     
+(11) - using all but first kind of coin a = 7  c = {}      => 0
+     - using all kind of coin           a = 2  c = {5}     (13)
+     
+(12) - using all but first kind of coin a = 6  c = {5}     (14)
+     - using all kind of coin           a = 5  c = {1, 5}  (15)
+     
+(13) - using all but first kind of coin a = 2  c = {}      => 0
+     - using all kind of coin           a = -3 c = {5}     => 0
+     
+(14) - using all but first kind of coin a = 6  c = {}      => 0
+     - using all kind of coin           a = 1  c = {5}     (16)
+     
+(15) - using all but first kind of coin a = 5  c = {5}     (17)
+     - using all kind of coin           a = 4  c = {1, 5}  (18)
+     
+(16) - using all but first kind of coin a = 1  c = {}      => 0
+     - using all kind of coin           a = =4 c = {5}     => 0
+     
+(17) - using all but first kind of coin a = 5  c = {}      => 0
+     - using all kind of coin           a = 0  c = {5}     => 1
+     
+(18) - using all but first kind of coin a = 4  c = {}      => 0
+     - using all kind of coin           a = 3  c = {1, 5}  (19)
+     
+(19) - using all but first kind of coin a = 3  c = {5}     (20)
+     - using all kind of coin           a = 2  c = {1, 5}  (21)
+     
+(20) - using all but first kind of coin a = 3  c = {}     => 0
+     - using all kind of coin           a = -2 c = {5}    => 0
+     
+(21) - using all but first kind of coin a = 2  c = {5}     (22)
+     - using all kind of coin           a = 1  c = {1, 5}  (23)
+     
+(22) - using all but first kind of coin a = 2  c = {}     => 0
+     - using all kind of coin           a = -3 c = {5}    => 0
+     
+(23) - using all but first kind of coin a = 1  c = {}     => 0
+     - using all kind of coin           a = 0  c = {1, 5} => 1
+
+=> There are 2 ways to make change for 10 cents using pennies and nickels.
+
+This can be accomplished also intuitively by taking the 2 cases separately
+
+1. all but the first kind of coin {5, 5}
+2. all kind of coins: number of ways to change 9 cents.
+   {5, 1, 1, 1, 1} and {1, 1, 1, 1, 1, 1, 1, 1, 1}
