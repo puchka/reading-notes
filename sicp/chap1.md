@@ -783,3 +783,32 @@ This can be accomplished also intuitively by taking the 2 cases separately
 1. all but the first kind of coin {5, 5}
 2. all kind of coins: number of ways to change 9 cents.
    {5, 1, 1, 1, 1} and {1, 1, 1, 1, 1, 1, 1, 1, 1}
+
+# Exercise 1.11
+
+A function $f$ is defined by the rule that $f(n) = n$ if $n < 3$ and
+$f(n) = f(n - 1) + 2f(n - 2) + 3f(n - 3)$ if $n \ge 3$.
+
+Let's write a procedure that compute $f$ by the means of a
+
+- recursive process
+
+```scheme
+(define (f n)
+  (if (< n 3)
+    n
+    (+ (f (- n 1)) (* 2 (f (- n 2))) (* 3 (f (- n 3))))))
+```
+
+- iterative process
+
+```scheme
+(define (f n)
+  (define (f-iter c b a k)
+    (if (<= (+ k 3) n)
+      (f-iter (+ c (* 2 b) (* 3 a)) c b (+ k 1))
+      c))
+  (if (< n 3)
+    n
+    (f-iter 2 1 0 0)))
+```
