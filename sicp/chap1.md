@@ -836,3 +836,87 @@ means of a recursive process.
     (+ (pascal (- x 1) (- y 1))
        (pascal (- x 1) y))))
 ```
+
+# Exercise 1.13
+
+Prove that $Fib(n)$ is the closest integer to $\phi^n / \sqrt(5)$, where
+$\phi = (1 + \sqrt{5}) / 2$.
+
+Hint: Let $\psi = \frac{1 - \sqrt{5}}{2}$.
+Use induction and the definition of the Fibonacci numbers (see section 1-2-2) to prove that
+$Fib(n) = (\phi^n - \psi^n) / \sqrt{5}$.
+
+Proof by induction.
+
+Base case:
+
+\begin{align*}
+Fib(0)&=(\phi^0 - \psi^0) / \sqrt{5} \\
+&= (1 - 1) / \sqrt{5} \\
+Fib(0) &= 0 \: \checkmark
+\end{align*}
+
+Let's check another case:
+
+\begin{align*}
+Fib(1)&=(\phi^1 - \psi^1) / \sqrt{5} \\
+&= (\frac{1 + \sqrt{5}}{2} - \frac{1 - \sqrt{5}}{2}) / \sqrt{5} \\
+&= \frac{1 + \sqrt{5} - 1 + \sqrt{5}}{2\sqrt{5}} = \frac{2\sqrt{5}}{2\sqrt{5}} \\
+Fib(1) &= 1 \: \checkmark
+\end{align*}
+
+Let's assume that
+
+$$
+Fib(n) = (\phi^n - \psi^n) / \sqrt{5} \; \forall n \ge 0
+$$
+
+Given that assumption, let's prove that
+
+$$
+Fib(n + 1) = (\phi^{n+1} - \psi^{n+1}) / \sqrt{5}
+$$
+
+\begin{align*}
+Fib(n + 1) &= Fib(n) + Fib(n - 1) \\
+&= \frac{\phi^n - \psi^n}{\sqrt{5}} + \frac{\phi^{n-1} - \psi^{n-1}}{\sqrt{5}} \\
+&= \frac{\phi^n + \phi^{n - 1} - \psi^n - \psi^{n - 1}}{\sqrt{5}} \\
+&= \frac{\phi^{n - 1}(\phi + 1) - \psi^{n - 1} (\psi + 1)}{\sqrt{5}}
+\end{align*}
+
+We can observe that
+
+\begin{align*}
+\phi^2 &= (\frac{1 + \sqrt{5}}{2})^2 \\
+&= \frac{1 + 2\sqrt{5} + 5}{4} \\
+&= \frac{2 + 2\sqrt{5} - 1 + 5}{4} \\
+&= \frac{1 + \sqrt{5}}{2} + 1 \\
+\phi^2 &= \phi + 1
+\end{align*}
+
+Similarly, we can observe that $\psi^2 = \psi + 1$
+
+\begin{align*}
+Fib(n + 1) &= \frac{\phi^{n - 1}\phi^2 - \psi^{n - 1}\psi^2}{\sqrt{5}} \\
+Fib(n + 1) &= \frac{\phi^{n + 1} - \psi^{n + 1}}{\sqrt{5}} \: \blacksquare
+\end{align*}
+
+Let's deduct that $Fib(n)$ is the closed integer to $\phi^n/\sqrt{5}$.
+
+As per the proof above, $Fib(n) = (\phi^n - \psi^n) / \sqrt{5}$
+
+
+Let's also make the observation that
+
+\begin{align*}
+4 < &5 < 9 \\
+2 < &\sqrt{5} < 3 \\
+-3 < &-\sqrt{5} < -2 \\
+-2 < &1 - \sqrt{5} < -1 \\
+-1 < &(1 - \sqrt{5})/2 < -1/2 \\
+-1 < &\psi < 1 \\
+-1 < &\psi^n < 1 \quad \textrm{and} \quad \sqrt{5} > 2 > 1 \\
+-1 < &\psi^n / \sqrt{5} < 1
+\end{align*}
+
+Thus, $Fib(n)$ is the closest integer to $\phi^n/\sqrt{5}$. $\blacksquare$
