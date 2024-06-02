@@ -1,0 +1,528 @@
+1. What is software?
+
+Software is the spirit of computers, it's the software which
+do the "work" inside a computer to make something useful.
+
+2. Why is software important?
+
+Software is important because without it, computers will
+be useless.
+
+3. Where is software important?
+
+Computer is important where there is computer i.e. in a major
+part of our civilization.
+
+4. What could go wrong if some software fails? List some examples.
+
+At least, it can annoy the user if software fails.
+
+e.g. not responding interface, error
+
+At worst, it can be a danger for the user.
+
+e.g. disfuction of shuttle can endanger the astaunote's life
+
+5. Where does software play an important role? List some examples.
+
+Sofware play an important role in many industry and application area.
+
+e.g. medecine, astronautic, aeronautic, research, science, engineering
+
+6. What are some jobs related to software development? List some.
+
+project management
+business knowledge
+
+7. What’s the difference between computer science and programming?
+
+computer science has more field that can be seen as not programming
+and programming involves some practical activities that as not
+really computer science.
+
+8. Where in the design, construction, and use of a ship is software used?
+
+CAD during the design of the ship,
+CAM during it's construction
+GPS, Weather, engine control during the use of the ship
+
+9. What is a server farm?
+
+A place where servers are stored
+
+10. What kinds of queries do you ask online? List some.
+
+free form queries
+
+11. What are some uses of software in science? List some.
+
+numerical computation
+poof system
+
+12. What are some uses of software in medicine? List some.
+
+automated access to patient's records
+robotic surgery
+
+13. What are some uses of software in entertainment? List some.
+
+special effects
+infographic
+animations
+
+14. What general properties do we expect from good software?
+
+correctness
+reliability
+
+15. What does a software developer look like?
+
+A software developer looks like a normal person.
+
+16. What are the stages of software development?
+
+analysis
+design
+programming
+testing
+
+17. Why can software development be difficult? List some reasons.
+
+The difficulty can be inherent to the problem beeing solved
+bad design
+
+18. What are some uses of software that make your life easier?
+
+chatting softwares
+IDE
+
+19. What are some uses of software that make your life more difficult?
+
+Buggy administrative online services
+
+Exercises
+
+1. Pick an activity you do most days (such as going to class, eating dinner,
+or watching television). Make a list of ways computers are directly or
+indirectly involved.
+
+going to lab
+computer in the control system of the elevator
+computer in the post of surveillance
+computer that control the door
+computer in the bus
+computer that control the door of PTU
+
+2. Pick a profession, preferably one that you have some interest in or some
+knowledge of. Make a list of activities done by people in that profession
+that involve computers.
+
+astronaut
+computer system that control the shuttle
+computer that control the communication system
+computer that control simulators
+computer that are used during the differents medical analysis
+computers are used during experiments in space
+
+4. From your own experience, describe an activity that would not have been
+possible without computers.
+
+learn and practice programming
+
+5. Make a list of programs (software applications) that you have directly
+used. List only examples where you obviously interact with a program
+(such as when selecting a new song on an MP3 player) and not cases
+where there just might happen to be a computer involved (such as turning
+the steering wheel of your car).
+
+games : mario, gobman
+dactylo
+office : word, excel, powerpoint
+browser
+python
+apache
+mysql
+gcc
+matlab
+gimp
+
+6. Make a list of ten activities that people do that do not involve computers
+in any way, even indirectly. This may be harder than you think!
+
+playing a social game
+almost all activities in countryside and under developped contries
+digging
+harversting
+
+7. Identify five tasks for which computers are not used today, but for which
+you think they will be used at some time in the future. Write a few sen-
+tences to elaborate on each one that you choose.
+
+decision taking are computer aided but are almost taken by human
+
+8. Write an explanation (at least 100 words, but fewer than 500) of why you
+would like to be a computer programmer. If, on the other hand, you are
+convinced that you would not like to be a programmer, explain that. In
+either case, present well-thought-out, logical arguments.
+
+I want to become a computer programmer because it's an activity that
+I like practicing.
+It allows me to interact with concepts that I develop
+and enable to have a thorough understanding of a subject.
+It enables to produce solution to real world problems too.
+That is kind of something for personal satisfaction.
+Like a mean to have an impact to the world.
+
+9. Write an explanation (at least 100 words, but fewer than 500) of what
+role other than programmer you’d like to play in the computer industry
+(independently of whether “programmer” is your first choice).
+
+I'd like to be involved in the analyse and design of a non trivial
+software to resolve a real world problem.
+
+10. Do you think computers will ever develop to be conscious, thinking be-
+ings, capable of competing with humans? Write a short paragraph (at
+least 100 words) supporting your position.
+
+It think it's a possibility that can happen.
+If the human mind works by mean that are completely physical
+without some magical, there should be no reason that will not happen.
+But I think some understanding of Turing completness and all
+may be required to respond fully to this question.
+And computability may help to. What can be computerized?
+
+11. List some characteristics that most successful programmers share. Then
+list some characteristics that programmers are popularly assumed to have.
+
+characteristics that most successful programmers share
+
+ability to grasp the essence of the technology that they use
+find weaknesses and propose solution for them
+capacity to produce solution with code elegantly and efficiently
+
+some characteristics that programmers are popularly assumed to have
+hacking : penetrate others computer
+genius : math and all
+ability to solve all computer realted problem
+
+12. Identify at least five kinds of applications for computer programs men-
+tioned in this chapter
+
+medecine
+ship bulding and using
+information management
+gadgets
+aerospace
+
+and pick the one that you find the most interesting
+and that you would most likely want to participate in someday.
+
+mars rovers
+
+it's kind of a big exploit to be able to find all the aleas
+that can occur in an unknown environment.
+It will be challenging technologically and scientifically too.
+There should be many work to do that are not really related to earth.
+And it's kind of a way to participate in human endeavour to explore
+unknown part of the universe.
+
+13. How much memory would it take to store (a) this page of text, (b) this
+chapter, (c) all of Shakespeare’s work? Assume one byte of memory holds
+one character and just try to be precise to about 20%.
+
+1ko
+
+20 ko
+
+400 ko
+
+14. How much memory does your computer have? Main memory? Disk?
+
+Main memory : 16Go
+Disk : 1T (Hard drive) + 109.1GB (SSD)
+
+
+1. What is the purpose of the “Hello, World!” program?
+
+The purpose of the "Hello, World!" program is to
+test the development environment and to start to make computer
+do work for us.
+
+2. Name the four parts of a function.
+
+type declaration
+name
+parameter list
+body
+
+3. Name a function that must appear in every C++ program.
+
+main
+
+4. In the “Hello, World!” program, what is the purpose of the line return 0; ?
+
+To return the value that the system wait for.
+In some system, it is an indicator that all goes well.
+
+5. What is the purpose of the compiler?
+
+The purpose of the compiler is to translate source code to binary machine
+code.
+
+6. What is the purpose of the #include directive?
+
+import declaration of symbols used in the code.
+
+7. What does a .h suffix at the end of a file name signify in C++?
+
+header
+
+8. What does the linker do for your program?
+
+link binary object file and generate an executable.
+
+9. What is the difference between a source file and an object file?
+
+source file contains source code (human readable code written in
+a programming language)
+
+object file conains binary code to be executed by the microprocessor.
+
+10. What is an IDE and what does it do for you?
+
+The IDE integrate an editor, a compiler, a linker and tools for debugging.
+
+It allows the programmer to do all these task by pressing a button
+
+11. If you understand everything in the textbook, why is it necessary to
+practice?
+
+programming is a practicall skill that can only be acquire through practice.
+
+Exercies
+Chapter 2
+2. Can you think of any more steps that a person would assume, but that a
+computer would not?
+
+Put anything in your hand in the table before standing up
+Go around the table
+Do not step on things on floor
+Put on the light in the stairs if it's off
+
+3. Write a description of how to get from the front door of your dorm room,
+apartment, house, whatever, to the door of your classroom
+
+close the door
+take the elevator
+go to the level 0
+open the door
+go to the portal (in your right)
+open the door by pushing the button just before it
+wait for the bus 6 in the bus stop in front of you
+When in Chaudron, go out of the bus
+go to the bus stop in Mail du Chaudron
+ - go out of the bus
+ - turn around the field from your right
+ - you will find a bus stop
+wait for the bus 26/27/27A/29/29A
+go out of the bus at Technopole
+find PTU, it's there
+
+
+Try 3
+
+She she laughed He He He because what he did did not look very very good
+good
+repeated word: He
+repeated word: He
+repeated word: did
+repeated word: very
+repeated word: good
+
+4 repeted words
+
+a word is defined here to be a sequence of characters between
+begin of file - word - space
+spaces
+space - word - end of file
+
+repetead word is a word that appear 2 times side by side, one after
+one another.
+
+No, She she is not a repetition.
+
+
+Try 4
+
+std_lib_facilities.h not defined in this directory
+
+‘STRING’ was not declared in this scope
+
+‘cOut’ was not declared in this scope
+
+‘S’ was not declared in this scope
+
+Compiler didn't get confused and didn't diagnose more than four errors
+
+1. What is meant by the term prompt?
+
+The term prompt indicate the string telling the user to provide an input.
+
+2. Which operator do you use to read into a variable?
+
+>>
+
+3. If you want the user to input an integer value into your program for a
+variable named number , what are two lines of code you could write to
+ask the user to do it and to input the value into your program?
+
+int number;
+cou << "Please enter an integer (followed by 'enter'):\n";
+cin >> number;
+
+4. What is \n called and what purpose does it serve?
+
+next line character
+
+5. What terminates input into a string?
+
+whitespace (space, nextline)
+
+6. What terminates input into an integer?
+
+non digit character
+
+7. How would you write
+cout << "Hello, ";
+cout << fi rst_name;
+cout << "!\n";
+as a single line of code?
+
+cout << "Hello, " << first_name << "!\n";
+
+8. What is an object?
+
+An object is a value in a memory that can be interpreted according to his type.
+
+9. What is a literal?
+
+A literal is a value written in the code.
+
+12. What kinds of literals are there?
+
+int, double, char, string, bool
+
+11. What is a variable?
+
+A variable is a named object.
+
+12. What are typical sizes for a char , an int , and a double ?
+
+char 8 bits
+int 32 bits
+double 64 bits
+
+13. What measures do we use for the size of small entities in memory, such
+as int s and string s?
+
+byte
+
+14. What is the difference between = and == ?
+
+= : assignment
+== : equality
+
+15. What is a definition?
+
+Introduction of a new name.
+
+16. What is an initialization and how does it differ from an assignment?
+
+An initialization is a definition with an assignment.
+
+17. What is string concatenation and how do you make it work in C++?
+
+string concatenation is the appending of a string in the end of another.
+
+It works by using the + operator with 2 strings.
+
+18. Which of the following are legal names in C++? If a name is not legal,
+why not?
+
+This_little_pig : legal
+latest thing : not legal
+MiniMineMine : legal
+This_1_is fi ne : not legal
+the_$12_method : not legal
+number : legal
+2_For_1_special : not legal
+_this_is_ok : legal
+correct? : not legal
+
+19. Give five examples of legal names that you shouldn’t use because they are
+likely to cause confusion.
+
+Char
+String
+Int
+Float
+Bool
+
+20. What are some good rules for choosing names?
+
+a name that represent well the value associated to it
+not excessively long (verbous)
+
+21. What is type safety and why is it important?
+
+Type safety is the property of a language that allow to be sure
+that a value is properly interpreted according to it's type.
+
+22. Why can conversion from double to int be a bad thing?
+
+Because it's a narrowing conversion.
+
+23. Define a rule to help decide if a conversion from one type to another is
+safe or unsafe.
+
+A conversion is safe is the destination variable has a capacity higher
+than the source variable.
+
+
+Terms
+
+assignment : give a new value to a variable.
+
+cin : character input
+
+concatenation : appending of a string in one another
+
+conversion : transfer of a value to a different type
+
+declaration : introduction of a new name
+
+decrement : decrease the value of a number by 1
+
+definition : declaration with an assignment
+
+increment : increase the value of a number by 1
+
+initialization : definition during declaration.
+
+name : identifier for an object
+
+narrowing : transfering of an object to another variable with smaller capacity
+
+object : a value stored in memory that is interpreted according to a type
+
+operation : function that is applied to a certain type
+
+operator : symbol of an operation
+
+type : structure than give the rules about the values that an object that has the type can have and operation that can be applied to them.
+
+type safety : a program or a part of a program is type-safe when objects are used only according to the rules for their type.
+
+value : a set of bit in memory that define an abject
+
+variable : a named object
